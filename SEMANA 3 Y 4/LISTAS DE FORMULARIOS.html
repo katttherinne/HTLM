@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+><html lang="es"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA Y FORMULARIO</title>
+</head>
+<body style= "background-color: darkseagreen;">
+    <header>
+        <img src="img/incapp.png" width="200" height="200" alt="incap">
+        <h1>LISTAS EN HTML </h1>
+        <h2>MENU NAVEGACION</h2>
+    </header>
+<nav>
+<ul>
+        <li type="disc" style="color:pink;" >home</li>
+        <li type="square">Productos</li>
+        <li type="circle">Servicios</li>
+        <li>Cotacto</li>
+</ul>
+</nav>
+<selection>
+    <!-- method get pasa los datos por la url, atravez de parametros// method POST para los datos de forma interna (no se ven)-->
+    <forma actiion="datos.php" method="post">
+<!--seccion de marco de formulario-->
+<fieldset>
+<!--seccion de ingreso de nombre-->
+<label >Nombre Completo:</label>
+<input name="nombre" type="text" placeholder="ingrese su nombre completo"required="">
+<br><br>
+<!--seccion email-->
+<label>E-mail</label>
+</input name="email" type="email" placeholder="ingrese su Email"required="">
+<br><br>
+
+<!--seccion contraseña-->
+<label>Contraseña:</label>
+</input name="email" type="email" placeholder="ingrese su Email" required=>
+<br><br>
+
+    <!--Seccion de Hobbies-->
+<label>Selecciona tus hobbies:
+</label>
+<br>
+    <input name="cine" type="checkbox">Cine<br>
+    <input name="Lectura" type="checkbox">Lectura<br> 
+    <input name="Deporte" type="checkbox">Deporte<br>
+<br>
+<br>
+
+<!-- Estado civil-->
+
+    <label>Estado civil</label><br>
+        <input name="estcivil" type="radio" value="casado">Casado(a)<br>
+        <input name="estcivil" type="radio" value="Soltero">Soltero(a)<br>
+        <input name="estcivil" type="radio" value="Viudo">Viudo(a)<br>
+<br>
+<br>
+
+<!--Seleccionar opcion lista-->
+<label>PROGRAMAS TECNICOS:</label>
+<select name="select">
+    <option>Selecione programa...</option>
+    <option>Sistemas</option>
+    <option>Diseño grafico</option>
+    <option>Contabilidad</option>
+</select>
+<br>
+<br>
+<label>Tu comentario:</label><br>
+<textarea name="mensaje" rows="5" cols="40"></textarea>
+</fieldset>
+<br><br>
+<!--seccion de botones formulario submit: enviar datos cancel: borrar datos ingresados-->
+<button type="submit">Enviar</button>
+<button type="reset">Cancelar</button>
+<br>
+<br>
+</forma>
+</selection>
+<!--seccion de pie de pagina -->
+<footer>
+    Derechos reservados &copy;2022&#64;NOMBRE STD
+</footer>
+</body>
+</html>
